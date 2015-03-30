@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="new_dish">Новое блюдо</string>
+    <string name="found_dish">Найти блюдо</string>
+    <string name="categories">Категории</string>
+</resources>

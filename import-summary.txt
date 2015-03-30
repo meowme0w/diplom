@@ -1,0 +1,103 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* ant.properties
+* app\
+* app\build.gradle
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\java\
+* app\src\main\java\ru\
+* app\src\main\java\ru\fl\
+* app\src\main\java\ru\fl\diplom\
+* app\src\main\java\ru\fl\diplom\MyActivity.java
+* app\src\main\res\
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-ldpi\
+* app\src\main\res\drawable-ldpi\ic_launcher.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\ic_launcher.png
+* app\src\main\res\layout-land\
+* app\src\main\res\layout-land\main.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\main.xml
+* app\src\main\res\values\
+* app\src\main\res\values\color.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\strings.xml
+* build.gradle
+* build.xml
+* diplom.iml
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* out\
+* out\production\
+* out\production\diplom\
+* out\production\diplom\diplom.apk
+* out\production\diplom\diplom.unaligned.apk
+* out\production\diplom\ru\
+* out\production\diplom\ru\fl\
+* out\production\diplom\ru\fl\diplom\
+* out\production\diplom\ru\fl\diplom\BuildConfig.class
+* out\production\diplom\ru\fl\diplom\MyActivity.class
+* out\production\diplom\ru\fl\diplom\R$attr.class
+* out\production\diplom\ru\fl\diplom\R$color.class
+* out\production\diplom\ru\fl\diplom\R$dimen.class
+* out\production\diplom\ru\fl\diplom\R$drawable.class
+* out\production\diplom\ru\fl\diplom\R$id.class
+* out\production\diplom\ru\fl\diplom\R$layout.class
+* out\production\diplom\ru\fl\diplom\R$string.class
+* out\production\diplom\ru\fl\diplom\R.class
+* proguard-project.txt
+* settings.gradle
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

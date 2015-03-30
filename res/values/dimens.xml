@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="name_app">40sp</dimen>
+    <dimen name="margin_bot">30sp</dimen>
+    <dimen name="button">25sp</dimen>
+    <dimen name="lland">15sp</dimen>
+</resources>

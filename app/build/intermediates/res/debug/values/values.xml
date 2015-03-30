@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="background">#FF99CC66</color>
+    <color name="bgbutton">#FFCCFF99</color>
+    <color name="font">#FF52300F</color>
+    <color name="text">#FF996632</color>
+    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="button">25sp</dimen>
+    <dimen name="lland">15sp</dimen>
+    <dimen name="margin_bot">30sp</dimen>
+    <dimen name="name_app">40sp</dimen>
+    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">CookBook</string>
+    <string name="categories">Категории</string>
+    <string name="found_dish">Найти блюдо</string>
+    <string name="new_dish">Новое блюдо</string>
+</resources>
