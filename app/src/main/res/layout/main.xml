@@ -23,7 +23,8 @@
             android:textSize="@dimen/button"
             android:textColor="@color/text"
             android:background="@color/bgbutton"
-            android:layout_marginBottom="@dimen/margin_bot" />
+            android:layout_marginBottom="@dimen/margin_bot"
+            android:onClick="AddNewDishes" />
     <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
