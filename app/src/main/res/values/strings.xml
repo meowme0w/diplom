@@ -4,4 +4,30 @@
     <string name="new_dish">Новое блюдо</string>
     <string name="found_dish">Найти блюдо</string>
     <string name="categories">Категории</string>
+
+    <string name="name_dish">Название блюда</string>
+    <string name="name_dish_hint">Введите название</string>
+    <string name="category">Категория</string>
+    <string-array name="category_list">
+        <item>Бульоны и супы</item>
+        <item>Горячие блюда</item>
+        <item>Салаты</item>
+        <item>Закуски</item>
+        <item>Напитки</item>
+        <item>Соусы</item>
+        <item>Выпечка</item>
+        <item>Десерты</item>
+        <item>Каши</item>
+        <item>Другое</item>
+
+    </string-array>
+    <string name="add_category">Добавить категорию</string>
+    <string name="preparation">Сложность приготовления</string>
+    <string name="time_preparation">Время приготовления (мин)</string>
+    <string name="number_of_servings">Количество порций</string>
+    <string name="add_photo">Добавить фотографию</string>
+
+    <string name="ingredients">Ингредиенты</string>
+
+
 </resources>

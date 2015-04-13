@@ -50,3 +50,9 @@ ADDED from AndroidManifest.xml:15:9
 		ADDED from AndroidManifest.xml:16:13
 	android:name
 		ADDED from AndroidManifest.xml:15:19
+activity#ru.fl.diplom.MyActivity3
+ADDED from AndroidManifest.xml:18:9
+	android:label
+		ADDED from AndroidManifest.xml:19:13
+	android:name
+		ADDED from AndroidManifest.xml:18:19
