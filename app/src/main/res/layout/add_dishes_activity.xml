@@ -131,7 +131,8 @@
         android:background="@color/bgbutton"
         android:layout_marginTop="@dimen/text_size_button"
         android:layout_marginBottom="@dimen/margins"
-        android:onClick="Validation" />
+        android:onClick="Validation"
+        android:padding="@dimen/margins" />
 </LinearLayout>
 </ScrollView>
 

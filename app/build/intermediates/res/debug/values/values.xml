@@ -32,16 +32,21 @@
     <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="add_category">Добавить категорию</string>
+    <string name="add_ingredient">Добавить ингридиент</string>
     <string name="add_photo">Добавить фотографию</string>
     <string name="app_name">CookBook</string>
+    <string name="button_delete">X</string>
     <string name="categories">Категории</string>
     <string name="category">Категория</string>
     <string name="found_dish">Найти блюдо</string>
     <string name="ingredients">Ингредиенты</string>
     <string name="name_dish">Название блюда</string>
     <string name="name_dish_hint">Введите название</string>
+    <string name="name_ingredient">Введите название</string>
     <string name="new_dish">Новое блюдо</string>
+    <string name="number_ingredient">Введите количество</string>
     <string name="number_of_servings">Количество порций</string>
+    <string name="ok">Готово</string>
     <string name="preparation">Сложность приготовления</string>
     <string name="time_preparation">Время приготовления (мин)</string>
 </resources>
