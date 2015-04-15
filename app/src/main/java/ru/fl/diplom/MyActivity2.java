@@ -33,7 +33,7 @@ public class MyActivity2 extends Activity {
     int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     Button btnSelect;
     ImageView ivImage;
-    String dish_name, category_name, difficulty, cooking_time;
+    String dish_name, category_name, difficulty, cooking_time, num_of_servings;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +78,7 @@ public class MyActivity2 extends Activity {
     }
 
     private void selectImage() {
+        
         final CharSequence[] items = { "Сделать фотографию", "Выбрать из галереи",
                 "Закрыть" };
         AlertDialog.Builder builder = new AlertDialog.Builder(MyActivity2.this);
