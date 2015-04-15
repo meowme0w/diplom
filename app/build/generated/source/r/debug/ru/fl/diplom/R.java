@@ -10,6 +10,7 @@ package ru.fl.diplom;
 public final class R {
     public static final class array {
         public static final int category_list=0x7f040000;
+        public static final int difficult_list=0x7f040001;
     }
     public static final class attr {
     }
@@ -31,31 +32,36 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int button=0x7f08000f;
-        public static final int button2=0x7f08000d;
-        public static final int button3=0x7f080012;
+        public static final int button=0x7f080010;
+        public static final int button2=0x7f08000e;
+        public static final int button3=0x7f080013;
         public static final int button5=0x7f08000a;
         public static final int button7=0x7f08000c;
+        public static final int button8=0x7f080016;
         public static final int editText=0x7f080001;
         public static final int editText2=0x7f080007;
         public static final int editText3=0x7f080009;
-        public static final int editText4=0x7f08000e;
-        public static final int linear=0x7f080010;
+        public static final int editText4=0x7f08000f;
+        public static final int editText5=0x7f080015;
+        public static final int linear=0x7f080011;
         public static final int picture=0x7f08000b;
-        public static final int ratingBar=0x7f080005;
+        public static final int ratingBar=0x7f08000d;
         public static final int spinner=0x7f080003;
-        public static final int textView=0x7f080011;
+        public static final int spinner2=0x7f080005;
+        public static final int textView=0x7f080012;
         public static final int textView2=0x7f080000;
         public static final int textView3=0x7f080002;
         public static final int textView4=0x7f080004;
         public static final int textView5=0x7f080006;
         public static final int textView6=0x7f080008;
+        public static final int textView7=0x7f080014;
     }
     public static final class layout {
         public static final int add_dishes_activity=0x7f030000;
         public static final int custom_edittext_layout=0x7f030001;
         public static final int ingridients=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int recipe_activity=0x7f030004;
     }
     public static final class string {
         public static final int add_category=0x7f070000;
@@ -65,15 +71,16 @@ public final class R {
         public static final int button_delete=0x7f070004;
         public static final int categories=0x7f070005;
         public static final int category=0x7f070006;
-        public static final int found_dish=0x7f070007;
-        public static final int ingredients=0x7f070008;
-        public static final int name_dish=0x7f070009;
-        public static final int name_ingredient=0x7f07000a;
-        public static final int new_dish=0x7f07000b;
-        public static final int number_ingredient=0x7f07000c;
-        public static final int number_of_servings=0x7f07000d;
-        public static final int ok=0x7f07000e;
-        public static final int preparation=0x7f07000f;
-        public static final int time_preparation=0x7f070010;
+        public static final int enter_recipe=0x7f070007;
+        public static final int found_dish=0x7f070008;
+        public static final int ingredients=0x7f070009;
+        public static final int name_dish=0x7f07000a;
+        public static final int name_ingredient=0x7f07000b;
+        public static final int new_dish=0x7f07000c;
+        public static final int number_ingredient=0x7f07000d;
+        public static final int number_of_servings=0x7f07000e;
+        public static final int ok=0x7f07000f;
+        public static final int preparation=0x7f070010;
+        public static final int time_preparation=0x7f070011;
     }
 }

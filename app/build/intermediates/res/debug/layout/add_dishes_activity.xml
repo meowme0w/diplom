@@ -58,11 +58,13 @@
         android:textSize="@dimen/textSize"
         android:textStyle="bold|italic" />
 
-    <RatingBar
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_marginLeft="@dimen/margins"/>
+        android:id="@+id/spinner2"
+        android:entries="@array/difficult_list"
+        android:layout_marginRight="@dimen/margins"
+        android:spinnerMode="dropdown" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -136,4 +138,4 @@
 </LinearLayout>
 </ScrollView>
 
-<!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout/add_dishes_activity.xml -->
+<!-- From: file:/D:/Repozitory/diplom/app/src/main/res/layout/add_dishes_activity.xml -->
