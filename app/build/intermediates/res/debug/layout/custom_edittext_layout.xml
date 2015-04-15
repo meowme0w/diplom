@@ -34,4 +34,4 @@
         android:layout_marginLeft="@dimen/margins"
         android:inputType="text" />
 
-</RelativeLayout><!-- From: file:/D:/Repozitory/diplom/app/src/main/res/layout/custom_edittext_layout.xml -->
+</RelativeLayout><!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout/custom_edittext_layout.xml -->

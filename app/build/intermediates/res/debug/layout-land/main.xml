@@ -43,4 +43,4 @@
             android:textColor="@color/text"
             android:background="@color/bgbutton"
             android:layout_marginBottom="@dimen/margin_bot_land"/>
-</LinearLayout><!-- From: file:/D:/Repozitory/diplom/app/src/main/res/layout-land/main.xml -->
+</LinearLayout><!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout-land/main.xml -->

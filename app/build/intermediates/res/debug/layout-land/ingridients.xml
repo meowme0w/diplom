@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+<<<<<<< HEAD
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,3 +44,6 @@
         android:layout_alignParentLeft="false" />
 
 </RelativeLayout><!-- From: file:/D:/Repozitory/diplom/app/src/main/res/layout-land/ingridients.xml -->
+=======
+</LinearLayout><!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout-land/ingridients.xml -->
+>>>>>>> origin/master
