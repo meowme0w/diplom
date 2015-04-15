@@ -1,5 +1,6 @@
 package ru.fl.diplom;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.text.Spanned;
@@ -79,4 +80,8 @@ import java.util.List;
          });
      }
 
+       public void IngridientsAdd(View view) {
+           Intent intent = new Intent(this,MyActivity4.class);
+           startActivity(intent);
+       }
 }

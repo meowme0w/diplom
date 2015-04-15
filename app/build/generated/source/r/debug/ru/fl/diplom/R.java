@@ -55,13 +55,15 @@ public final class R {
         public static final int textView5=0x7f080006;
         public static final int textView6=0x7f080008;
         public static final int textView7=0x7f080014;
+        public static final int textView8=0x7f080017;
     }
     public static final class layout {
         public static final int add_dishes_activity=0x7f030000;
         public static final int custom_edittext_layout=0x7f030001;
         public static final int ingridients=0x7f030002;
         public static final int main=0x7f030003;
-        public static final int recipe_activity=0x7f030004;
+        public static final int preparation_activity=0x7f030004;
+        public static final int recipe_activity=0x7f030005;
     }
     public static final class string {
         public static final int add_category=0x7f070000;
@@ -81,6 +83,8 @@ public final class R {
         public static final int number_of_servings=0x7f07000e;
         public static final int ok=0x7f07000f;
         public static final int preparation=0x7f070010;
-        public static final int time_preparation=0x7f070011;
+        public static final int recipe=0x7f070011;
+        public static final int time_preparation=0x7f070012;
+        public static final int tyt=0x7f070013;
     }
 }

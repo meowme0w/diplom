@@ -52,5 +52,7 @@
     <string name="number_of_servings">Количество порций</string>
     <string name="ok">Готово</string>
     <string name="preparation">Сложность приготовления</string>
+    <string name="recipe">Рецепт</string>
     <string name="time_preparation">Время приготовления (мин)</string>
+    <string name="tyt">Тут будет весь рецепт</string>
 </resources>

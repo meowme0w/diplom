@@ -28,6 +28,14 @@
             android:name="ru.fl.diplom.MyActivity3"
             android:label="@string/ingredients" >
         </activity>
+        <activity
+            android:name="ru.fl.diplom.MyActivity4"
+            android:label="@string/recipe" >
+        </activity>
+        <activity
+            android:name="ru.fl.diplom.MyActivity5"
+            android:label="@string/tyt" >
+        </activity>
     </application>
 
 </manifest>
