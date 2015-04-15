@@ -68,13 +68,12 @@ public final class R {
         public static final int found_dish=0x7f070007;
         public static final int ingredients=0x7f070008;
         public static final int name_dish=0x7f070009;
-        public static final int name_dish_hint=0x7f07000a;
-        public static final int name_ingredient=0x7f07000b;
-        public static final int new_dish=0x7f07000c;
-        public static final int number_ingredient=0x7f07000d;
-        public static final int number_of_servings=0x7f07000e;
-        public static final int ok=0x7f07000f;
-        public static final int preparation=0x7f070010;
-        public static final int time_preparation=0x7f070011;
+        public static final int name_ingredient=0x7f07000a;
+        public static final int new_dish=0x7f07000b;
+        public static final int number_ingredient=0x7f07000c;
+        public static final int number_of_servings=0x7f07000d;
+        public static final int ok=0x7f07000e;
+        public static final int preparation=0x7f07000f;
+        public static final int time_preparation=0x7f070010;
     }
 }

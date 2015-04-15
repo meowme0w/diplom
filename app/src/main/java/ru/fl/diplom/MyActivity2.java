@@ -60,7 +60,7 @@ public class MyActivity2 extends Activity {
                     @Override
                     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
 
-                        if (source.toString().matches("[а-яА-ЯёЁ\\s]+")) {
+                        if (source.toString().matches("[а-яА-ЯёЁ ]+")) {
                             return source;
                         }
                         return "";
@@ -87,7 +87,7 @@ public class MyActivity2 extends Activity {
                             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     intent.setType("image/*");
                     startActivityForResult(
-                            Intent.createChooser(intent, "Select File"),
+                            Intent.createChooser(intent, "Выбрать файл"),
                             SELECT_FILE);
                 } else if (items[item].equals("Закрыть")) {
                     dialog.dismiss();
@@ -186,6 +186,4 @@ public class MyActivity2 extends Activity {
     Intent intent = new Intent(this, MyActivity3.class);
     startActivity(intent);
     }
-
-
 }

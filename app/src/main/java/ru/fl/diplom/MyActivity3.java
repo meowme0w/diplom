@@ -54,7 +54,7 @@ import java.util.List;
                          @Override
                          public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
 
-                             if (source.toString().matches("[а-яА-ЯёЁ\\s]+")) {
+                             if (source.toString().matches("[а-яА-ЯёЁ ]+")) {
                                  return source;
                              }
                              return "";
@@ -68,7 +68,7 @@ import java.util.List;
                          @Override
                          public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
 
-                             if (source.toString().matches("[0-9а-яёА-ЯЁ\\s]+")) {
+                             if (source.toString().matches("[0-9а-яёА-ЯЁ .]+")) {
                                  return source;
                              }
                              return "";

@@ -6,7 +6,6 @@
     <string name="categories">Категории</string>
 
     <string name="name_dish">Название блюда</string>
-    <string name="name_dish_hint">Введите название</string>
     <string name="category">Категория</string>
     <string-array name="category_list">
         <item>Бульоны и супы</item>
@@ -19,20 +18,16 @@
         <item>Десерты</item>
         <item>Каши</item>
         <item>Другое</item>
-
     </string-array>
     <string name="add_category">Добавить категорию</string>
     <string name="preparation">Сложность приготовления</string>
     <string name="time_preparation">Время приготовления (мин)</string>
     <string name="number_of_servings">Количество порций</string>
     <string name="add_photo">Добавить фотографию</string>
-
     <string name="ingredients">Ингредиенты</string>
     <string name="add_ingredient">Добавить ингридиент</string>
     <string name="name_ingredient">Введите название</string>
     <string name="number_ingredient">Введите количество</string>
     <string name="button_delete">X</string>
     <string name="ok">Готово</string>
-
-
 </resources>

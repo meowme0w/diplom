@@ -13,7 +13,6 @@
         <item>Десерты</item>
         <item>Каши</item>
         <item>Другое</item>
-
     </string-array>
     <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/color.xml -->
     <eat-comment/>
@@ -41,7 +40,6 @@
     <string name="found_dish">Найти блюдо</string>
     <string name="ingredients">Ингредиенты</string>
     <string name="name_dish">Название блюда</string>
-    <string name="name_dish_hint">Введите название</string>
     <string name="name_ingredient">Введите название</string>
     <string name="new_dish">Новое блюдо</string>
     <string name="number_ingredient">Введите количество</string>

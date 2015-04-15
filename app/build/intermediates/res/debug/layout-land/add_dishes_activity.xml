@@ -27,7 +27,6 @@
             android:id="@+id/editText"
             android:layout_marginLeft="@dimen/margins"
             android:layout_marginRight="@dimen/margins"
-            android:hint="@string/name_dish_hint"
             android:textColor="@color/text" />
 
         <TextView
