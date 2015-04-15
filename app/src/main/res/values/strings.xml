@@ -30,4 +30,5 @@
     <string name="number_ingredient">Введите количество</string>
     <string name="button_delete">X</string>
     <string name="ok">Готово</string>
+    <string name="enter_recipe">Введите рецепт:</string>
 </resources>
