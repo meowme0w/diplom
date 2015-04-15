@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="category_list">
         <item>Бульоны и супы</item>
@@ -15,13 +15,13 @@
         <item>Другое</item>
 
     </string-array>
-    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="background">#FF99CC66</color>
     <color name="bgbutton">#FFCCFF99</color>
     <color name="font">#FF52300F</color>
     <color name="text">#FF996632</color>
-    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="margin_bot">30sp</dimen>
     <dimen name="margin_bot_land">15sp</dimen>
@@ -29,7 +29,7 @@
     <dimen name="name_app">40sp</dimen>
     <dimen name="textSize">20sp</dimen>
     <dimen name="text_size_button">25sp</dimen>
-    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="add_category">Добавить категорию</string>
     <string name="add_ingredient">Добавить ингридиент</string>
