@@ -18,5 +18,11 @@
         <activity android:name="MyActivity3"
             android:label="@string/ingredients">
         </activity>
+        <activity android:name="MyActivity4"
+        android:label="@string/recipe">
+    </activity>
+        <activity android:name="MyActivity5"
+            android:label="@string/tyt">
+        </activity>
     </application>
 </manifest>

@@ -40,6 +40,7 @@
         android:background="@color/bgbutton"
         android:textColor="@color/font"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="false" />
+        android:layout_alignParentLeft="false"
+        android:onClick="IngridientsAdd"/>
 
 </RelativeLayout><!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout-land/ingridients.xml -->

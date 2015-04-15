@@ -19,7 +19,15 @@
         <item>Средне</item>
         <item>Тяжело</item>
     </string-array>
+<<<<<<< HEAD
     <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/color.xml -->
+=======
+<<<<<<< HEAD
+    <!-- From: file:/D:/Repozitory/diplom/app/src/main/res/values/color.xml -->
+=======
+    <!-- From: file:/D:/Workspace/diplom/app/src/main/res/values/color.xml -->
+>>>>>>> origin/database
+>>>>>>> de5e1b2d9dd912e73002b238f2c598364fc80875
     <eat-comment/>
     <color name="background">#FF99CC66</color>
     <color name="bgbutton">#FFCCFF99</color>
@@ -52,5 +60,7 @@
     <string name="number_of_servings">Количество порций</string>
     <string name="ok">Готово</string>
     <string name="preparation">Сложность приготовления</string>
+    <string name="recipe">Рецепт</string>
     <string name="time_preparation">Время приготовления (мин)</string>
+    <string name="tyt">Тут будет весь рецепт</string>
 </resources>
