@@ -33,4 +33,4 @@
         android:layout_marginBottom="@dimen/margins"
         android:onClick=""
         android:padding="@dimen/margins" />
-</LinearLayout><!-- From: file:/D:/Repozitory/diplom/app/src/main/res/layout/recipe_activity.xml -->
+</LinearLayout><!-- From: file:/D:/Workspace/diplom/app/src/main/res/layout/recipe_activity.xml -->
