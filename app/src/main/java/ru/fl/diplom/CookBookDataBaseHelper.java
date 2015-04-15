@@ -3,6 +3,7 @@ package ru.fl.diplom;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Кирилл on 14.04.2015.
@@ -18,34 +19,43 @@ public class CookBookDataBaseHelper extends SQLiteOpenHelper  {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table categories ("
-                + "category_id unsigned int primary key autoincrement, "
-                + "category_name TINYTEXT, "
-                + ");"
-        );
-        db.execSQL("create table difficults ("
-                        + "difficult_id unsigned int primary key autoincrement, "
-                        + "difficult TINYTEXT, "
-                        + ");"
-        );
         db.execSQL("create table dishes ("
                 + "dish_id unsigned int primary key autoincrement, "
                 + "name TINYTEXT, "
-                + "category_id unsigned TINYINT,"
-                + "difficult_id unsigned TINYINT, "
+                + "category TINYTEXT,"
+                + "difficult TINYTEXT, "
                 + "cooking_time unsigned SMALLINT, "
                 + "num_of_servings unsigned TINYINT, "
-                + "image_path TINYTEXT, "
                 + "recipe TEXT, "
-                + "FOREIGN KEY (category_id) REFERENCES categories (category_id), "
-                + "FOREIGN KEY (difficult_id) REFERENCES difficults (difficult_id), "
+                + "PRIMARY KEY (dish_id)"
+                + ");"
+        );
+        db.execSQL("create table ingredients ("
+                + "ingredient_id unsigned int autoincrement, "
+                + "name TINYTEXT, "
+                + "PRIMARY KEY (ingredient_id)"
+                + ");"
+        );
+        db.execSQL("create table dishes_ingredients ("
+                + "dish_id unsigned int,"
+                + "ingredient_id unsigned int, "
+                + "value TINYTEXT, "
+                + "FOREIGN KEY (dish_id) references dishes(dish_id), "
+                + "FOREIGN KEY (ingredient_id) references ingredients(ingredient_id)"
                 + ");"
         );
     }
 
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
-
+    public void onUpgrade(SQLiteDatabase db, int old_ver, int new_ver) {
+        Log.w("LOG_TAG", "Обновление базы данных с версии " + old_ver
+                + " до версии " + new_ver + ", которое удалит все старые данные");
+        // Удаляем предыдущую таблицу при апгрейде
+        db.execSQL("DROP TABLE IF EXISTS dishes_ingredients");
+        db.execSQL("DROP TABLE IF EXISTS ingredients");
+        db.execSQL("DROP TABLE IF EXISTS dishes");
+        // Создаём новый экземпляр таблицы
+        onCreate(db);
     }
 }
