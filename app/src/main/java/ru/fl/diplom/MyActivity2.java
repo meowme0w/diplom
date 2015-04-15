@@ -78,7 +78,7 @@ public class MyActivity2 extends Activity {
     }
 
     private void selectImage() {
-        
+
         final CharSequence[] items = { "Сделать фотографию", "Выбрать из галереи",
                 "Закрыть" };
         AlertDialog.Builder builder = new AlertDialog.Builder(MyActivity2.this);
@@ -172,17 +172,17 @@ public class MyActivity2 extends Activity {
         EditText editText = (EditText) findViewById(R.id.editText);
         EditText editText2 = (EditText) findViewById(R.id.editText2);
         EditText editText3 = (EditText) findViewById(R.id.editText3);
-        String name = editText.getText().toString();
-        String time = editText2.getText().toString();
-        String preparation = editText3.getText().toString();
+        dish_name = editText.getText().toString();
+        cooking_time = editText2.getText().toString();
+        num_of_servings = editText3.getText().toString();
 
-        if (name.equals("")) {
+        if (dish_name.equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
         }
-        else if (time.equals("")) {
+        else if (dish_name.equals("")) {
             Toast.makeText(this, "Заполните поле \"Время приготовления\"", Toast.LENGTH_SHORT).show();
         }
-        else if (preparation.equals("")) {
+        else if (dish_name.equals("")) {
             Toast.makeText(this, "Заполните поле \"Количество порций\"", Toast.LENGTH_SHORT).show();
         }
         else {
@@ -191,6 +191,7 @@ public class MyActivity2 extends Activity {
             }
 
     public void StartActivity(View view) {
+
     Intent intent = new Intent(this, MyActivity3.class);
     startActivity(intent);
     }
