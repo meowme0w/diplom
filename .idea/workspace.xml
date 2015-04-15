@@ -42,9 +42,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd116972-cd48-4bcd-9df7-1402615fcc8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recipe_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="D:\Repozitory\diplom\.idea\workspace.xml" afterPath="D:\Repozitory\diplom\.idea\workspace.xml" />
     </list>
     <ignored path="diplom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,8 +69,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.88" vertical-offset="272" max-vertical-offset="680">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            <state vertical-scroll-proportion="-10.88" vertical-offset="374" max-vertical-offset="765">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -81,8 +79,8 @@
       <file leaf-file-name="MyActivity2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/fl/diplom/MyActivity2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="3298">
-              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="3417">
+              <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -108,15 +106,15 @@
           </provider>
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1997" max-vertical-offset="2448">
-              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="134" selection-end-column="43" />
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="136" selection-end-column="43" />
               <folding>
                 <element signature="e#539#558#0" expanded="true" />
                 <element signature="e#660#677#0" expanded="true" />
                 <element signature="e#708#724#0" expanded="true" />
-                <element signature="e#4424#4445#0" expanded="true" />
-                <element signature="e#4656#4681#0" expanded="true" />
-                <element signature="e#4718#4734#0" expanded="true" />
-                <element signature="e#4796#4812#0" expanded="true" />
+                <element signature="e#4509#4530#0" expanded="true" />
+                <element signature="e#4741#4766#0" expanded="true" />
+                <element signature="e#4803#4819#0" expanded="true" />
+                <element signature="e#4881#4897#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,11 +122,11 @@
       </file>
       <file leaf-file-name="recipe_activity.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recipe_activity.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="697">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.97289157" vertical-offset="0" max-vertical-offset="697">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="e#419#441#0" expanded="true" />
@@ -1992,10 +1990,10 @@
             <element signature="e#539#558#0" expanded="true" />
             <element signature="e#660#677#0" expanded="true" />
             <element signature="e#708#724#0" expanded="true" />
-            <element signature="e#4424#4445#0" expanded="true" />
-            <element signature="e#4656#4681#0" expanded="true" />
-            <element signature="e#4718#4734#0" expanded="true" />
-            <element signature="e#4796#4812#0" expanded="true" />
+            <element signature="e#4509#4530#0" expanded="true" />
+            <element signature="e#4741#4766#0" expanded="true" />
+            <element signature="e#4803#4819#0" expanded="true" />
+            <element signature="e#4881#4897#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2420,16 +2418,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/fl/diplom/MyActivity2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2669">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="3417">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.88" vertical-offset="272" max-vertical-offset="680">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+        <state vertical-scroll-proportion="-10.88" vertical-offset="374" max-vertical-offset="765">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -2440,15 +2438,15 @@
       </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1997" max-vertical-offset="2448">
-          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="134" selection-end-column="43" />
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="136" selection-end-column="43" />
           <folding>
             <element signature="e#539#558#0" expanded="true" />
             <element signature="e#660#677#0" expanded="true" />
             <element signature="e#708#724#0" expanded="true" />
-            <element signature="e#4424#4445#0" expanded="true" />
-            <element signature="e#4656#4681#0" expanded="true" />
-            <element signature="e#4718#4734#0" expanded="true" />
-            <element signature="e#4796#4812#0" expanded="true" />
+            <element signature="e#4509#4530#0" expanded="true" />
+            <element signature="e#4741#4766#0" expanded="true" />
+            <element signature="e#4803#4819#0" expanded="true" />
+            <element signature="e#4881#4897#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2473,11 +2471,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recipe_activity.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="697">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97289157" vertical-offset="0" max-vertical-offset="697">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#419#441#0" expanded="true" />

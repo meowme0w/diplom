@@ -33,6 +33,7 @@ public class MyActivity2 extends Activity {
     int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     Button btnSelect;
     ImageView ivImage;
+    String dish_name, category_name, difficulty, cooking_time;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,12 @@ public class MyActivity2 extends Activity {
                 R.array.category_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        Spinner spinner_difficult = (Spinner) findViewById(R.id.spinner2);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+                R.array.difficult_list, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner_difficult.setAdapter(adapter2);
 
 
         EditText edittext = (EditText) findViewById(R.id.editText);
