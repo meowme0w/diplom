@@ -27,3 +27,5 @@ proguard/
 *.log
 
 .idea/workspace.xml
+
+app/app.iml
