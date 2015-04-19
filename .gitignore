@@ -38,3 +38,5 @@ app/app.iml
 .idea/workspace.xml
 app/app.iml
 >>>>>>> origin/master
+
+local.properties
