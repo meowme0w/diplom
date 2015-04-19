@@ -26,17 +26,5 @@ proguard/
 # Log Files
 *.log
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .idea/workspace.xml
-
-app/app.iml
-=======
-.idea/workspace.xml
->>>>>>> origin/master
-=======
-.idea/workspace.xml
-app/app.iml
->>>>>>> origin/master
-
-local.properties
+app.iml
