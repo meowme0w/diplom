@@ -179,16 +179,14 @@ public class MyActivity2 extends Activity {
         if (dish_name.equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
         }
-        else if (dish_name.equals("")) {
+        else if (cooking_time.equals("")) {
             Toast.makeText(this, "Заполните поле \"Время приготовления\"", Toast.LENGTH_SHORT).show();
         }
-        else if (dish_name.equals("")) {
+        else if (num_of_servings.equals("")) {
             Toast.makeText(this, "Заполните поле \"Количество порций\"", Toast.LENGTH_SHORT).show();
         }
-        else {
-            StartActivity(view);
-                }
-            }
+        else StartActivity(view);
+    }
 
     public void StartActivity(View view) {
 
