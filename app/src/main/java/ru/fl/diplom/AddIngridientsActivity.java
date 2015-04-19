@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-   public class MyActivity3 extends Activity {
+   public class AddIngridientsActivity extends Activity {
      private List<View> allEds;
     // private int counter = 0;
 
@@ -81,7 +81,7 @@ import java.util.List;
      }
 
        public void IngridientsAdd(View view) {
-           Intent intent = new Intent(this,MyActivity4.class);
+           Intent intent = new Intent(this,PreparationActivity.class);
            startActivity(intent);
        }
 }

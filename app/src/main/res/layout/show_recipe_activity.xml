@@ -9,7 +9,6 @@
     <TextView
         android:layout_width="301dp"
         android:layout_height="wrap_content"
-        android:text="@string/tyt"
         android:id="@+id/textView8"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/text"

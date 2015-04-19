@@ -28,7 +28,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 
-public class MyActivity2 extends Activity {
+public class AddDishesActivity extends Activity {
 
     int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     Button btnSelect;
@@ -81,7 +81,7 @@ public class MyActivity2 extends Activity {
 
         final CharSequence[] items = { "Сделать фотографию", "Выбрать из галереи",
                 "Закрыть" };
-        AlertDialog.Builder builder = new AlertDialog.Builder(MyActivity2.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(AddDishesActivity.this);
         builder.setTitle("Добавить фотографию");
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
@@ -190,7 +190,7 @@ public class MyActivity2 extends Activity {
 
     public void StartActivity(View view) {
 
-    Intent intent = new Intent(this, MyActivity3.class);
+    Intent intent = new Intent(this, AddIngridientsActivity.class);
     startActivity(intent);
     }
 }

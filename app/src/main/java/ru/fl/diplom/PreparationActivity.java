@@ -5,16 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MyActivity extends Activity {
+public class PreparationActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.preparation_activity);
     }
 
-    public void AddNewDishes(View view) {
-        Intent intent = new Intent(this,MyActivity2.class);
+    public void AddPreratation(View view) {
+        Intent intent = new Intent(this,ShowRecipeActivity.class);
         startActivity(intent);
     }
 }
