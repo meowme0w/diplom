@@ -185,10 +185,8 @@ public class MyActivity2 extends Activity {
         else if (num_of_servings.equals("")) {
             Toast.makeText(this, "Заполните поле \"Количество порций\"", Toast.LENGTH_SHORT).show();
         }
-        else {
-            StartActivity(view);
-                }
-            }
+        else StartActivity(view);
+    }
 
     public void StartActivity(View view) {
 
