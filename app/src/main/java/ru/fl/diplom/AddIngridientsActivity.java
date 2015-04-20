@@ -21,7 +21,7 @@ import java.util.List;
          super.onCreate(savedInstanceState);
          setContentView(R.layout.ingridients);
 
-         Button addButton = (Button) findViewById(R.id.button);
+         Button addButton = (Button) findViewById(R.id.add_ingredient_button);
          allEds = new ArrayList<View>();
          final LinearLayout linear = (LinearLayout) findViewById(R.id.linear);
          addButton.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +31,7 @@ import java.util.List;
 
          //    counter++;
              final View view = getLayoutInflater().inflate(R.layout.custom_edittext_layout, null);
-             Button deleteField = (Button) view.findViewById(R.id.button2);
+             Button deleteField = (Button) view.findViewById(R.id.delete_button);
 
              deleteField.setOnClickListener(new View.OnClickListener() {
                  @Override
@@ -49,8 +49,8 @@ import java.util.List;
              allEds.add(view);
              linear.addView(view);
 
-             EditText text = (EditText) view.findViewById(R.id.editText);
-             text.setFilters(new InputFilter[]{
+             EditText name_ingredient = (EditText) view.findViewById(R.id.edit_name_ingredient);
+             name_ingredient.setFilters(new InputFilter[]{
                      new InputFilter() {
                          @Override
                          public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
@@ -63,8 +63,8 @@ import java.util.List;
                      }
              });
 
-             EditText numb = (EditText) view.findViewById(R.id.editText4);
-             numb.setFilters(new InputFilter[]{
+             EditText number_ingredient = (EditText) view.findViewById(R.id.edit_number_ingredient);
+             number_ingredient.setFilters(new InputFilter[]{
                      new InputFilter() {
                          @Override
                          public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
@@ -80,7 +80,7 @@ import java.util.List;
          });
      }
 
-       public void IngridientsAdd(View view) {
+       public void IngridientsAdded(View view) {
            Intent intent = new Intent(this,PreparationActivity.class);
            startActivity(intent);
        }

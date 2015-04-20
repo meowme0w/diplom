@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name_dish"
-            android:id="@+id/textView2"
+            android:id="@+id/text_name_dish"
             android:textColor="@color/font"
             android:textSize="@dimen/textSize"
             android:layout_margin="@dimen/margins"
@@ -24,16 +24,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/edit_name_dish"
             android:layout_marginLeft="@dimen/margins"
             android:layout_marginRight="@dimen/margins"
+            android:inputType="text"
             android:textColor="@color/text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/category"
-            android:id="@+id/textView3"
+            android:id="@+id/text_category"
             android:textColor="@color/font"
             android:layout_margin="@dimen/margins"
             android:textSize="@dimen/textSize"
@@ -42,7 +43,7 @@
         <Spinner
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner"
+            android:id="@+id/spinner_category"
             android:entries="@array/category_list"
             android:layout_marginRight="@dimen/margins"
             android:spinnerMode="dropdown" />
@@ -51,23 +52,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/preparation"
-            android:id="@+id/textView4"
+            android:id="@+id/text_preparation"
             android:textColor="@color/font"
             android:layout_margin="@dimen/margins"
             android:textSize="@dimen/textSize"
             android:textStyle="bold|italic" />
 
-        <RatingBar
-            android:layout_width="wrap_content"
+        <Spinner
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ratingBar"
-            android:layout_marginLeft="@dimen/margins"/>
+            android:id="@+id/spinner_difficult"
+            android:entries="@array/difficult_list"
+            android:layout_marginRight="@dimen/margins"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/time_preparation"
-            android:id="@+id/textView5"
+            android:id="@+id/text_time_preparation"
             android:textColor="@color/font"
             android:layout_margin="@dimen/margins"
             android:textSize="@dimen/textSize"
@@ -78,7 +81,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLength="3"
-            android:id="@+id/editText2"
+            android:id="@+id/edit_time_preparation"
             android:layout_marginRight="@dimen/margins"
             android:layout_marginLeft="@dimen/margins" />
 
@@ -86,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/number_of_servings"
-            android:id="@+id/textView6"
+            android:id="@+id/text_number_of_servings"
             android:textColor="@color/font"
             android:layout_margin="@dimen/margins"
             android:textSize="@dimen/textSize"
@@ -97,7 +100,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLength="2"
-            android:id="@+id/editText3"
+            android:id="@+id/edit_number_of_servings"
             android:layout_marginLeft="@dimen/margins"
             android:layout_marginRight="@dimen/margins"
             android:layout_marginBottom="@dimen/margin_bot" />
@@ -106,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/add_photo"
-            android:id="@+id/button5"
+            android:id="@+id/add_photo_button"
             android:textColor="@color/font"
             android:background="@color/bgbutton"
             android:layout_marginLeft="@dimen/margins"
@@ -116,7 +119,7 @@
         <ImageView
             android:id="@+id/picture"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_margin="5dp"
             android:layout_gravity="center_horizontal" />
 
@@ -124,12 +127,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ingredients"
-            android:id="@+id/button7"
+            android:id="@+id/ingredients_button"
             android:layout_gravity="bottom|center_horizontal"
             android:textColor="@color/font"
             android:background="@color/bgbutton"
             android:layout_marginTop="@dimen/text_size_button"
             android:layout_marginBottom="@dimen/margins"
-            android:onClick="Validation" />
+            android:onClick="Validation"
+            android:padding="@dimen/margins" />
     </LinearLayout>
 </ScrollView>

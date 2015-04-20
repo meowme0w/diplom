@@ -46,4 +46,3 @@
             android:textColor="@color/text"
             android:background="@color/bgbutton"/>
 </LinearLayout>
-

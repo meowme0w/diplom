@@ -37,4 +37,8 @@
     <string name="ok">Готово</string>
     <string name="recipe">Рецепт</string>
     <string name="enter_recipe">Введите рецепт:</string>
+    <string name="on_main">На главную</string>
+    <string name="delete_recipe">Удалить</string>
+    <string name="edit_recipe">Редактировать</string>
+
 </resources>

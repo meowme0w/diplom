@@ -38,7 +38,7 @@ public class AddDishesActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_dishes_activity);
-        btnSelect = (Button) findViewById(R.id.button5);
+        btnSelect = (Button) findViewById(R.id.add_photo_button);
         btnSelect.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -48,21 +48,21 @@ public class AddDishesActivity extends Activity {
         });
         ivImage = (ImageView) findViewById(R.id.picture);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner category_spinner = (Spinner) findViewById(R.id.spinner_category);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.category_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        category_spinner.setAdapter(adapter);
 
-        Spinner spinner_difficult = (Spinner) findViewById(R.id.spinner2);
+        Spinner difficult_spinner = (Spinner) findViewById(R.id.spinner_difficult);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.difficult_list, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_difficult.setAdapter(adapter2);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        difficult_spinner.setAdapter(adapter2);
 
 
-        EditText edittext = (EditText) findViewById(R.id.editText);
-        edittext.setFilters(new InputFilter[]{
+        EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
+        name_dish_edit.setFilters(new InputFilter[]{
                 new InputFilter() {
                     @Override
                     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
@@ -78,7 +78,6 @@ public class AddDishesActivity extends Activity {
     }
 
     private void selectImage() {
-
         final CharSequence[] items = { "Сделать фотографию", "Выбрать из галереи",
                 "Закрыть" };
         AlertDialog.Builder builder = new AlertDialog.Builder(AddDishesActivity.this);
@@ -169,12 +168,12 @@ public class AddDishesActivity extends Activity {
     }
 
     public void Validation(View view) {
-        EditText editText = (EditText) findViewById(R.id.editText);
-        EditText editText2 = (EditText) findViewById(R.id.editText2);
-        EditText editText3 = (EditText) findViewById(R.id.editText3);
-        dish_name = editText.getText().toString();
-        cooking_time = editText2.getText().toString();
-        num_of_servings = editText3.getText().toString();
+        EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
+        EditText time_preparation_edit = (EditText) findViewById(R.id.edit_time_preparation);
+        EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
+        dish_name = name_dish_edit.getText().toString();
+        cooking_time = time_preparation_edit.getText().toString();
+        num_of_servings = number_of_servings_edit.getText().toString();
 
         if (dish_name.equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
@@ -189,7 +188,6 @@ public class AddDishesActivity extends Activity {
     }
 
     public void StartActivity(View view) {
-
     Intent intent = new Intent(this, AddIngridientsActivity.class);
     startActivity(intent);
     }

@@ -7,29 +7,29 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/edit_name_ingredient"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/button2"
+        android:layout_toLeftOf="@+id/delete_button"
         android:hint="@string/name_ingredient"
         android:layout_marginLeft="@dimen/margins"
-        android:inputType="textPersonName" />
+        android:inputType="text" />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="@string/button_delete"
-        android:id="@+id/button2"
-        android:layout_above="@+id/editText4"
+        android:id="@+id/delete_button"
+        android:layout_above="@+id/edit_number_ingredient"
         android:layout_alignParentRight="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText"
+        android:id="@+id/edit_number_ingredient"
+        android:layout_below="@+id/edit_name_ingredient"
         android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/button2"
+        android:layout_toLeftOf="@+id/delete_button"
         android:hint="@string/number_ingredient"
         android:layout_marginLeft="@dimen/margins"
         android:inputType="text" />
