@@ -19,7 +19,7 @@ import java.util.List;
      @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
-         setContentView(R.layout.ingridients);
+         setContentView(R.layout.ingredients);
 
          Button addButton = (Button) findViewById(R.id.add_ingredient_button);
          allEds = new ArrayList<View>();

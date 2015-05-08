@@ -30,7 +30,7 @@
     <string name="number_of_servings">Количество порций</string>
     <string name="add_photo">Добавить фотографию</string>
     <string name="ingredients">Ингредиенты</string>
-    <string name="add_ingredient">Добавить ингридиент</string>
+    <string name="add_ingredient">Добавить ингредиент</string>
     <string name="name_ingredient">Введите название</string>
     <string name="number_ingredient">Введите количество</string>
     <string name="button_delete">X</string>
