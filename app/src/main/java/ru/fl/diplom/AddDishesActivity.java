@@ -189,6 +189,9 @@ public class AddDishesActivity extends Activity {
 
     public void StartActivity(View view) {
     Intent intent = new Intent(this, AddIngridientsActivity.class);
+        intent.putExtra("dish_name", dish_name);
+        intent.putExtra("cooking_time", cooking_time);
+        intent.putExtra("num_of_servings", num_of_servings);
     startActivity(intent);
     }
 }
