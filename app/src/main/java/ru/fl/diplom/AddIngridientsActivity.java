@@ -17,6 +17,7 @@ import java.util.List;
        private List<View> allEds;
     // private int counter = 0;
 
+<<<<<<< HEAD
         String dish_name = getIntent().getExtras().getString("dish_name");
         String cooking_time = getIntent().getExtras().getString("cooking_time");
         String num_of_servings = getIntent().getExtras().getString("num_of_servings");
@@ -24,6 +25,12 @@ import java.util.List;
         protected void onCreate(Bundle savedInstanceState) {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.ingridients);
+=======
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.ingredients);
+>>>>>>> 8ccdb6c27933ecaf0467f1e5b3b057013bffa6db
 
              Button addButton = (Button) findViewById(R.id.add_ingredient_button);
              allEds = new ArrayList<View>();
