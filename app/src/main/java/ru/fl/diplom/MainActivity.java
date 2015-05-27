@@ -17,4 +17,14 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this,AddDishesActivity.class);
         startActivity(intent);
     }
+
+    public void FoundDish(View view) {
+        Intent intent = new Intent(this,Search.class);
+        startActivity(intent);
+    }
+
+    public void ShowCategories(View view) {
+        Intent intent = new Intent(this,CategoriesActivity.class);
+        startActivity(intent);
+    }
 }

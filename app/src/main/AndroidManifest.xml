@@ -3,26 +3,48 @@
     package="ru.fl.diplom"
     android:versionCode="1"
     android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="16"/>
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <uses-sdk android:minSdkVersion="15"/>
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+
         <activity android:name="MainActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name="AddDishesActivity"
+            android:screenOrientation="portrait"
             android:label="@string/new_dish">
         </activity>
+
         <activity android:name="AddIngridientsActivity"
+            android:screenOrientation="portrait"
             android:label="@string/ingredients">
         </activity>
+
         <activity android:name="PreparationActivity"
-        android:label="@string/recipe">
+            android:screenOrientation="portrait"
+            android:label="@string/recipe">
     </activity>
+
         <activity android:name="ShowRecipeActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name">
+    </activity>
+
+        <activity android:name="Search"
+            android:screenOrientation="portrait"
+            android:label="@string/found_dish">
+        </activity>
+
+        <activity android:name="CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/categories">
         </activity>
     </application>
 </manifest>

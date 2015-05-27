@@ -62,20 +62,6 @@ import java.util.List;
                          }
                      }
              });
-
-             EditText number_ingredient = (EditText) view.findViewById(R.id.edit_number_ingredient);
-             number_ingredient.setFilters(new InputFilter[]{
-                     new InputFilter() {
-                         @Override
-                         public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
-
-                             if (source.toString().matches("[0-9а-яёА-ЯЁ .]+")) {
-                                 return source;
-                             }
-                             return "";
-                         }
-                     }
-             });
          }
          });
      }
