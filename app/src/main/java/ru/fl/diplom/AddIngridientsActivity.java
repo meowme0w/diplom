@@ -17,44 +17,32 @@ import java.util.List;
        private List<View> allEds;
     // private int counter = 0;
 
-<<<<<<< HEAD
-        String dish_name = getIntent().getExtras().getString("dish_name");
-        String cooking_time = getIntent().getExtras().getString("cooking_time");
-        String num_of_servings = getIntent().getExtras().getString("num_of_servings");
         @Override
         protected void onCreate(Bundle savedInstanceState) {
-             super.onCreate(savedInstanceState);
-             setContentView(R.layout.ingridients);
-=======
-     @Override
-     protected void onCreate(Bundle savedInstanceState) {
-         super.onCreate(savedInstanceState);
-         setContentView(R.layout.ingredients);
->>>>>>> 8ccdb6c27933ecaf0467f1e5b3b057013bffa6db
-
-             Button addButton = (Button) findViewById(R.id.add_ingredient_button);
-             allEds = new ArrayList<View>();
-             final LinearLayout linear = (LinearLayout) findViewById(R.id.linear);
-             addButton.setOnClickListener(new View.OnClickListener() {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.ingredients);
+            Button addButton = (Button) findViewById(R.id.add_ingredient_button);
+            allEds = new ArrayList<View>();
+            final LinearLayout linear = (LinearLayout) findViewById(R.id.linear);
+            addButton.setOnClickListener(new View.OnClickListener() {
              @Override
 
              public void onClick(View v) {
 
-             //    counter++;
-                 final View view = getLayoutInflater().inflate(R.layout.custom_edittext_layout, null);
-                 Button deleteField = (Button) view.findViewById(R.id.delete_button);
-
-                 deleteField.setOnClickListener(new View.OnClickListener() {
+            //    counter++;
+                final View view = getLayoutInflater().inflate(R.layout.custom_edittext_layout, null);
+                Button deleteField = (Button) view.findViewById(R.id.delete_button);
+                deleteField.setOnClickListener(new View.OnClickListener() {
                      @Override
                      public void onClick(View v) {
-                         try {
-                             ((LinearLayout) view.getParent()).removeView(view);
-                             allEds.remove(view);
-                         }
-                         catch(IndexOutOfBoundsException ex) {
-                             ex.printStackTrace();
-                         }
-                     }
+                        try {
+                            ((LinearLayout) view.getParent()).removeView(view);
+                            allEds.remove(view);
+                        }
+                        catch(IndexOutOfBoundsException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
                  });
 
                  allEds.add(view);
@@ -97,8 +85,7 @@ import java.util.List;
 
                  //запускаем чтение всех елементов этого списка и запись в массив
                  for(int i=0; i < allEds.size(); i++) {
-                     items[i].name = ((EditText) allEds.get(i).findViewById(R.id.edit_name_ingredient)).getText().toString();
-                     items[i].numof = ((EditText) allEds.get(i).findViewById(R.id.edit_number_ingredient)).getText().toString();
+
                      //ну и можно сразу же здесь вывести
                      Log.e("", ((EditText) allEds.get(i).findViewById(R.id.edit_name_ingredient)).getText().toString());
                      Log.e("", ((EditText) allEds.get(i).findViewById(R.id.edit_number_ingredient)).getText().toString());
