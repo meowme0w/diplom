@@ -1,48 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="@color/background">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lime">
+
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:id="@+id/name"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/font"
-            android:textSize="@dimen/name_app"
-            android:layout_marginTop="@dimen/name_app"
-            android:layout_marginBottom="@dimen/margin_bot"
-        android:textStyle="bold|italic" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/name_app"
+        android:layout_marginBottom="@dimen/margin_bot"
+        android:background="@drawable/cookbook" />
+
     <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/new_dish"
-            android:id="@+id/add_new_dish_button"
-            android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/text_size_button"
-            android:textColor="@color/text"
-            android:background="@color/bgbutton"
-            android:layout_marginBottom="@dimen/margin_bot"
-            android:onClick="AddNewDishes" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bot"
+        android:id="@+id/add_new_dish_button"
+        android:text="@string/new_dish"
+        android:textSize="@dimen/text_size_button"
+        android:textColor="@color/text"
+        android:textStyle="italic"
+        android:onClick="AddNewDishes"
+        android:background="@drawable/button" />
+
     <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/found_dish"
-            android:id="@+id/found_dish_button"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/bgbutton"
-            android:textColor="@color/text"
-            android:textSize="@dimen/text_size_button"
-            android:layout_marginBottom="@dimen/margin_bot"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/found_dish"
+        android:id="@+id/found_dish_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size_button"
+        android:layout_marginBottom="@dimen/margin_bot"
+        android:textStyle="italic"
+        android:onClick="FoundDish"
+        android:background="@drawable/button" />
+
     <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/categories"
-            android:id="@+id/show_categories_button"
-            android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/text_size_button"
-            android:textColor="@color/text"
-            android:background="@color/bgbutton"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:id="@+id/show_categories_button"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size_button"
+        android:textColor="@color/text"
+        android:textStyle="italic"
+        android:onClick="ShowCategories"
+        android:background="@drawable/button" />
 </LinearLayout>

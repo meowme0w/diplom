@@ -60,29 +60,16 @@ import java.util.List;
                                  return "";
                              }
                          }
-                 });
 
-                 EditText number_ingredient = (EditText) view.findViewById(R.id.edit_number_ingredient);
-                 number_ingredient.setFilters(new InputFilter[]{
-                         new InputFilter() {
-                             @Override
-                             public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
-
-                                 if (source.toString().matches("[0-9а-яёА-ЯЁ .]+")) {
-                                     return source;
-                                 }
-                                 return "";
-                             }
-                         }
-                 });
-             }
              });
-        }
+         }
+         });
+     }
+
 
              public void IngridientsAdded(View view) {
                  //преобразуем наш ArrayList в просто String Array
                  Ingredient [] items = new Ingredient[allEds.size()];
-
                  //запускаем чтение всех елементов этого списка и запись в массив
                  for(int i=0; i < allEds.size(); i++) {
 

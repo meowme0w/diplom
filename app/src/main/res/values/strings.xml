@@ -32,7 +32,7 @@
     <string name="ingredients">Ингредиенты</string>
     <string name="add_ingredient">Добавить ингредиент</string>
     <string name="name_ingredient">Введите название</string>
-    <string name="number_ingredient">Введите количество</string>
+    <string name="number_ingredient">Количество</string>
     <string name="button_delete">X</string>
     <string name="ok">Готово</string>
     <string name="recipe">Рецепт</string>
@@ -40,5 +40,19 @@
     <string name="on_main">На главную</string>
     <string name="delete_recipe">Удалить</string>
     <string name="edit_recipe">Редактировать</string>
+    <string-array name="measure_unit">
+        <item>шт</item>
+        <item>стакан</item>
+        <item>ч/л</item>
+        <item>ст/л</item>
+        <item>кг</item>
+        <item>г</item>
+        <item>мг</item>
+        <item>мл</item>
+        <item>л</item>
+        <item>по вкусу</item>
+    </string-array>
+
+    <string name="search">Искать</string>
 
 </resources>

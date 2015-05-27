@@ -9,7 +9,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:focusableInTouchMode="true">
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,7 +84,8 @@
         android:maxLength="3"
         android:id="@+id/edit_time_preparation"
         android:layout_marginRight="@dimen/margins"
-        android:layout_marginLeft="@dimen/margins" />
+        android:layout_marginLeft="@dimen/margins"
+        android:textColor="@color/text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -103,7 +105,8 @@
         android:id="@+id/edit_number_of_servings"
         android:layout_marginLeft="@dimen/margins"
         android:layout_marginRight="@dimen/margins"
-        android:layout_marginBottom="@dimen/margin_bot" />
+        android:layout_marginBottom="@dimen/margin_bot"
+        android:textColor="@color/text" />
 
     <Button
         android:layout_width="match_parent"

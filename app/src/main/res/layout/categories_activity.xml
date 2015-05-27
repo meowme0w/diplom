@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/textSize"
+            android:layout_marginRight="@dimen/textSize"
+             android:layout_marginTop="@dimen/margins">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/soup"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margins"
+                android:layout_marginRight="@dimen/margins" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/hot_courses"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margins"
+                android:layout_marginRight="@dimen/margins" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/textSize"
+            android:layout_marginRight="@dimen/textSize">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/snack"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margins"
+                android:layout_marginRight="@dimen/margins" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4"
+                android:background="@drawable/salat"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margins"
+                android:layout_marginRight="@dimen/margins" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/textSize"
+            android:layout_marginRight="@dimen/textSize">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton5"
+                android:background="@drawable/drinks"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margins"
+                android:layout_marginRight="@dimen/margins" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton6"
+                android:background="@drawable/sauce"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/margins"
+                android:layout_marginLeft="@dimen/margins" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -15,6 +15,7 @@ import android.text.InputFilter;
 import android.text.Spanned;
 import android.view.View;
 import android.widget.AdapterView;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,6 +40,7 @@ public class AddDishesActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_dishes_activity);
+
         btnSelect = (Button) findViewById(R.id.add_photo_button);
         btnSelect.setOnClickListener(new View.OnClickListener() {
 
@@ -184,9 +186,9 @@ public class AddDishesActivity extends Activity {
         EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
         EditText time_preparation_edit = (EditText) findViewById(R.id.edit_time_preparation);
         EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
-        dish.dish_name =
 
-        StartActivity(view);
+
+
     }
 
     public void StartActivity(View view) {
