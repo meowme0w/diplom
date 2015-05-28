@@ -16,11 +16,14 @@ import java.util.List;
    public class AddIngridientsActivity extends Activity {
        private List<View> allEds;
     // private int counter = 0;
-
+        final String LOG_TAG = "Dish";
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.ingredients);
+            Dish dish = (Dish) getIntent().getParcelableExtra(Dish.class.getCanonicalName());
+
+            Log.d(LOG_TAG, dish.get_Ingredients().get(0).get_ingredient_name());
             Button addButton = (Button) findViewById(R.id.add_ingredient_button);
             allEds = new ArrayList<View>();
             final LinearLayout linear = (LinearLayout) findViewById(R.id.linear);

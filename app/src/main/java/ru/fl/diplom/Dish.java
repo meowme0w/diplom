@@ -9,21 +9,90 @@ import java.util.ArrayList;
  * Created by adm on 25.05.2015.
  */
 public class Dish implements Parcelable{
-    public  int dish_id;
-    public  String dish_name;
-    public  String category;
-    public  String difficult;
-    public  int time;
-    public ArrayList<Ingredient> IngredientsList;
-    public String recipe;
+    int dish_id;
+    String dish_name;
+    String category;
+    String difficult;
+    String time;
+    String num_servs;
+    ArrayList<Ingredient> IngredientsList = new ArrayList<Ingredient>();
+    String recipe;
 
+    public void set_dish_id(int dish_id){
+        this.dish_id = dish_id;
+    }
 
+    public int get_dish_id(){
+        return dish_id;
+    }
 
-    public Dish(String dish_name, String category, String difficult, int time){
+    public void set_dish_name(String dish_name){
+        this.dish_name = dish_name;
+    }
+
+    public String get_dish_name(){
+        return dish_name;
+    }
+
+    public void set_category(String category){
+        this.category = category;
+    }
+
+    public String get_category(){
+        return category;
+    }
+
+    public void set_difficult(String difficult){
+        this.difficult = difficult;
+    }
+
+    public String get_difficult(){
+        return difficult;
+    }
+
+    public void set_time(String time){
+        this.time = time;
+    }
+
+    public String get_time(){
+        return time;
+    }
+
+    public void set_num_servs(String num_servs){
+        this.num_servs = num_servs;
+    }
+
+    public String get_num_servs(){
+        return num_servs;
+    }
+
+    public void set_recipe(String difficult){
+        this.difficult = difficult;
+    }
+
+    public String get_recipe(){
+        return recipe;
+    }
+
+    public void put_Ingredient(Ingredient ingredient) {
+        this.IngredientsList.add(ingredient);
+    }
+
+    public void set_Ingredients(ArrayList<Ingredient> IngredientsList){
+        this.IngredientsList = IngredientsList;
+    }
+
+    public ArrayList<Ingredient> get_Ingredients(){
+        return IngredientsList;
+    }
+    public Dish(){}
+    public Dish(String dish_name, String category, String difficult, String time, String num_servs){
         this.dish_name = dish_name;
         this.category = category;
         this. difficult = difficult;
         this.time = time;
+        this.num_servs = num_servs;
+        this.IngredientsList = new ArrayList<Ingredient>();
     }
 
     public Dish(Parcel parcel){
@@ -31,8 +100,9 @@ public class Dish implements Parcelable{
         this.dish_name = parcel.readString();
         this.category = parcel.readString();
         this. difficult = parcel.readString();
-        this.time = parcel.readInt();
-        this.IngredientsList = parcel.readArrayList(null);
+        this.time = parcel.readString();
+        this.num_servs = parcel.readString();
+        parcel.readTypedList(IngredientsList, Ingredient.CREATOR);
         this.recipe = parcel.readString();
     }
 
@@ -47,8 +117,9 @@ public class Dish implements Parcelable{
         parcel.writeString(dish_name);
         parcel.writeString(category);
         parcel.writeString(difficult);
-        parcel.writeInt(time);
-        parcel.writeList(IngredientsList);
+        parcel.writeString(time);
+        parcel.writeString(num_servs);
+        parcel.writeTypedList(IngredientsList);
         parcel.writeString(recipe);
     }
 
