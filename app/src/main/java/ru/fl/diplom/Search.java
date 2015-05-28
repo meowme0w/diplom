@@ -31,5 +31,10 @@ public class Search extends Activity {
                     }
                 }
         });
+
+    }
+    public void Search (View view) {
+        Intent intent = new Intent(this,ResultActivity.class);
+        startActivity(intent);
     }
 }
