@@ -26,7 +26,8 @@
                 android:background="@drawable/soup"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
-                android:layout_marginRight="@dimen/margins" />
+                android:layout_marginRight="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -35,7 +36,8 @@
                 android:background="@drawable/hot_courses"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
-                android:layout_marginRight="@dimen/margins" />
+                android:layout_marginRight="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
         </LinearLayout>
 
@@ -54,7 +56,8 @@
                 android:background="@drawable/snack"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
-                android:layout_marginRight="@dimen/margins" />
+                android:layout_marginRight="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -63,7 +66,8 @@
                 android:background="@drawable/salat"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
-                android:layout_marginRight="@dimen/margins" />
+                android:layout_marginRight="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
         </LinearLayout>
 
@@ -82,7 +86,8 @@
                 android:background="@drawable/drinks"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
-                android:layout_marginRight="@dimen/margins" />
+                android:layout_marginRight="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -91,7 +96,8 @@
                 android:background="@drawable/sauce"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/margins"
-                android:layout_marginLeft="@dimen/margins" />
+                android:layout_marginLeft="@dimen/margins"
+                android:onClick="ShowCategoryRecipies" />
 
         </LinearLayout>
 
