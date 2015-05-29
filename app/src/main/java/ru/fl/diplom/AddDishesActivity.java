@@ -207,9 +207,6 @@ public class AddDishesActivity extends Activity {
         dish.set_dish_name(name_dish_edit.getText().toString());
         dish.set_time(time_preparation_edit.getText().toString());
         dish.set_num_servs(number_of_servings_edit.getText().toString());
-        Ingredient ingredient = new Ingredient("лук", "2", "кг");
-        dish.put_Ingredient(ingredient);
-
         if (dish.get_dish_name().equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
         }

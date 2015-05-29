@@ -67,7 +67,7 @@ public class Dish implements Parcelable{
     }
 
     public void set_recipe(String difficult){
-        this.difficult = difficult;
+        this.recipe = recipe;
     }
 
     public String get_recipe(){

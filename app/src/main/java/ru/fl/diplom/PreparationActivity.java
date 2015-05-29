@@ -42,7 +42,10 @@ public class PreparationActivity extends Activity {
     }
 
     public void PreratationAdded(View view) {
+        Dish dish = (Dish) getIntent().getParcelableExtra(Dish.class.getCanonicalName());
+        dish.set_recipe(recipe);
         Intent intent = new Intent(this,ShowRecipeActivity.class);
+        intent.putExtra(Dish.class.getCanonicalName(), dish);
         startActivity(intent);
     }
 }
