@@ -22,7 +22,7 @@ public class ShowRecipeActivity extends Activity {
         ((TextView)findViewById(R.id.category_choose)).setText(dish.get_category());
         ((TextView)findViewById(R.id.preparation_choose)).setText(dish.get_difficult());
         ((TextView)findViewById(R.id.time_choose)).setText(dish.get_time());
-        ((TextView)findViewById(R.id.number_of_servings_choose)).setText(dish.get_num_servs());
+        //((TextView)findViewById(R.id.number_of_servings_choose)).setText(dish.get_num_servs());
         String ingredients = new String();
         for(int i=0 ; i< dish.get_Ingredients().size() ; i++) {
             ingredients += (dish.get_Ingredients().get(i).get_ingredient_name() + "  "
