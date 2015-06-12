@@ -38,8 +38,8 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_difficult"
-        android:entries="@array/difficult_list"
+        android:id="@+id/spinner_dif_search"
+        android:entries="@array/difficult_list_search"
         android:layout_marginRight="@dimen/margins"
         android:spinnerMode="dropdown" />
 

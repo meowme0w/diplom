@@ -8,9 +8,6 @@ import android.text.Spanned;
 import android.view.View;
 import android.widget.EditText;
 
-/**
- * Created by Елена on 08.05.2015.
- */
 public class Search extends Activity {
 
     @Override

@@ -13,7 +13,9 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -30,11 +32,11 @@ import java.io.IOException;
 
 
 public class AddDishesActivity extends Activity {
-
+    final String LOG_TAG = "myLogs";
     int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     Button btnSelect;
     ImageView ivImage;
-    String dish_name, category_name, difficulty, cooking_time, num_of_servings;
+    Dish dish = new Dish();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,18 +52,49 @@ public class AddDishesActivity extends Activity {
         });
         ivImage = (ImageView) findViewById(R.id.picture);
 
-        Spinner category_spinner = (Spinner) findViewById(R.id.spinner_category);
+        //Спиннер "Категория" с обработчиком
+        final Spinner category_spinner = (Spinner) findViewById(R.id.spinner_category);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.category_list, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         category_spinner.setAdapter(adapter);
+        category_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
 
-        Spinner difficult_spinner = (Spinner) findViewById(R.id.spinner_difficult);
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    dish.set_category(category_spinner.getSelectedItem().toString());
+                    Log.d(LOG_TAG, dish.get_category());
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        //Спиннер "Сложность приготовления" с обработчиком
+        final Spinner difficult_spinner = (Spinner) findViewById(R.id.spinner_difficult);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.difficult_list, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         difficult_spinner.setAdapter(adapter2);
+        difficult_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
 
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                dish.set_difficult(difficult_spinner.getSelectedItem().toString());
+                Log.d(LOG_TAG, dish.get_difficult());
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
         name_dish_edit.setFilters(new InputFilter[]{
@@ -171,26 +204,25 @@ public class AddDishesActivity extends Activity {
 
     public void Validation(View view) {
         EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
-       // EditText time_preparation_edit = (EditText) findViewById(R.id.edit_time_preparation);
-      //  EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
-        dish_name = name_dish_edit.getText().toString();
-       // cooking_time = time_preparation_edit.getText().toString();
-       // num_of_servings = number_of_servings_edit.getText().toString();
-
-        if (dish_name.equals("")) {
+        EditText time_preparation_edit = (EditText) findViewById(R.id.edit_time_preparation);
+       // EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
+        dish.set_dish_name(name_dish_edit.getText().toString());
+        dish.set_time(time_preparation_edit.getText().toString());
+      //  dish.set_num_servs(number_of_servings_edit.getText().toString());
+        if (dish.get_dish_name().equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
         }
-       /* else if (cooking_time.equals("")) {
-            Toast.makeText(this, "Заполните поле \"Время приготовления\"", Toast.LENGTH_SHORT).show();
+        else if (dish.get_category().equals("")) {
+            Toast.makeText(this, "Выберите категорию", Toast.LENGTH_SHORT).show();
         }
-        else if (num_of_servings.equals("")) {
-            Toast.makeText(this, "Заполните поле \"Количество порций\"", Toast.LENGTH_SHORT).show();
-        } */
         else StartActivity(view);
     }
 
     public void StartActivity(View view) {
     Intent intent = new Intent(this, AddIngridientsActivity.class);
+    intent.putExtra(Dish.class.getCanonicalName(), dish);
+    Log.d(LOG_TAG,"start activity");
+
     startActivity(intent);
     }
 }

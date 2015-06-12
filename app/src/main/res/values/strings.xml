@@ -20,6 +20,12 @@
         <item>Другое</item>
     </string-array>
     <string-array name="difficult_list">
+    <item>Легко</item>
+    <item>Средне</item>
+    <item>Тяжело</item>
+</string-array>
+    <string-array name="difficult_list_search">
+        <item>Выберете сложность</item>
         <item>Легко</item>
         <item>Средне</item>
         <item>Тяжело</item>

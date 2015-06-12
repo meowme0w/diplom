@@ -30,15 +30,10 @@ public class CookBookDataBaseHelper extends SQLiteOpenHelper  {
                 + "PRIMARY KEY (dish_id)"
                 + ");"
         );
-        db.execSQL("create table ingredients ("
-                + "ingredient_id unsigned int autoincrement, "
-                + "name TINYTEXT, "
-                + "PRIMARY KEY (ingredient_id)"
-                + ");"
-        );
+
         db.execSQL("create table dishes_ingredients ("
                 + "dish_id unsigned int,"
-                + "ingredient_id unsigned int, "
+                + "ingredient_name TINYTEXT, "
                 + "value TINYTEXT, "
                 + "FOREIGN KEY (dish_id) references dishes(dish_id), "
                 + "FOREIGN KEY (ingredient_id) references ingredients(ingredient_id)"
