@@ -114,9 +114,8 @@
         android:layout_gravity="bottom|center_horizontal"
         android:textColor="@color/font"
         android:background="@color/bgbutton"
-        android:layout_marginTop="@dimen/text_size_button"
-        android:layout_marginBottom="@dimen/margins"
         android:onClick="Validation"
-        android:padding="@dimen/margins" />
+        android:padding="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins" />
 </LinearLayout>
 </ScrollView>

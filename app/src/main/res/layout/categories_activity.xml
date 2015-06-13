@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton7"
-                android:background="@drawable/cake2"
+                android:background="@drawable/cake"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
                 android:layout_marginRight="@dimen/margins"
