@@ -87,27 +87,6 @@
         android:layout_marginLeft="@dimen/margins"
         android:textColor="@color/text" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/number_of_servings"
-        android:id="@+id/text_number_of_servings"
-        android:textColor="@color/font"
-        android:layout_margin="@dimen/margins"
-        android:textSize="@dimen/textSize"
-        android:textStyle="bold|italic"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:maxLength="2"
-        android:id="@+id/edit_number_of_servings"
-        android:layout_marginLeft="@dimen/margins"
-        android:layout_marginRight="@dimen/margins"
-        android:layout_marginBottom="@dimen/margin_bot"
-        android:textColor="@color/text" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -117,7 +96,8 @@
         android:background="@color/bgbutton"
         android:layout_marginLeft="@dimen/margins"
         android:layout_marginRight="@dimen/margins"
-        android:onClick="selectImage" />
+        android:onClick="selectImage"
+        android:layout_marginTop="@dimen/margins" />
 
     <ImageView
         android:id="@+id/picture"
@@ -134,9 +114,8 @@
         android:layout_gravity="bottom|center_horizontal"
         android:textColor="@color/font"
         android:background="@color/bgbutton"
-        android:layout_marginTop="@dimen/text_size_button"
-        android:layout_marginBottom="@dimen/margins"
         android:onClick="Validation"
-        android:padding="@dimen/margins" />
+        android:padding="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins" />
 </LinearLayout>
 </ScrollView>

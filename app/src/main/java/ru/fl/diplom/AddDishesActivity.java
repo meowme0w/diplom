@@ -51,7 +51,8 @@ public class AddDishesActivity extends Activity {
             }
         });
         ivImage = (ImageView) findViewById(R.id.picture);
-        //спиннер категории с обработчиком
+
+        //Спиннер "Категория" с обработчиком
         final Spinner category_spinner = (Spinner) findViewById(R.id.spinner_category);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.category_list, android.R.layout.simple_spinner_item);
@@ -72,7 +73,8 @@ public class AddDishesActivity extends Activity {
 
             }
         });
-        //спиннер сложность приготовления с обработчиком
+
+        //Спиннер "Сложность приготовления" с обработчиком
         final Spinner difficult_spinner = (Spinner) findViewById(R.id.spinner_difficult);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.difficult_list, android.R.layout.simple_spinner_item);
@@ -203,20 +205,17 @@ public class AddDishesActivity extends Activity {
     public void Validation(View view) {
         EditText name_dish_edit = (EditText) findViewById(R.id.edit_name_dish);
         EditText time_preparation_edit = (EditText) findViewById(R.id.edit_time_preparation);
-        EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
+       // EditText number_of_servings_edit = (EditText) findViewById(R.id.edit_number_of_servings);
         dish.set_dish_name(name_dish_edit.getText().toString());
         dish.set_time(time_preparation_edit.getText().toString());
-        dish.set_num_servs(number_of_servings_edit.getText().toString());
+      //  dish.set_num_servs(number_of_servings_edit.getText().toString());
         if (dish.get_dish_name().equals("")) {
             Toast.makeText(this, "Заполните поле \"Название блюда\"", Toast.LENGTH_SHORT).show();
         }
         else if (dish.get_category().equals("")) {
-            Toast.makeText(this, "Заполните поле \"Время приготовления\"", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Выберите категорию", Toast.LENGTH_SHORT).show();
         }
         else StartActivity(view);
-
-
-
     }
 
     public void StartActivity(View view) {
