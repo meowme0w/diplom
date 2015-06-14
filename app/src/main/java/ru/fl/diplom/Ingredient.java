@@ -62,3 +62,4 @@ public class Ingredient implements Parcelable{
         }
     };
 }
+
