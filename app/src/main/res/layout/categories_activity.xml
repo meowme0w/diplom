@@ -22,7 +22,7 @@
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
+                android:id="@+id/soup_button"
                 android:background="@drawable/soup"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -32,7 +32,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton2"
+                android:id="@+id/hot_courses_button"
                 android:background="@drawable/hot_courses"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -52,7 +52,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton3"
+                android:id="@+id/snack_button"
                 android:background="@drawable/snack"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -62,7 +62,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton4"
+                android:id="@+id/salat_button"
                 android:background="@drawable/salat"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -82,7 +82,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton5"
+                android:id="@+id/drinks_button"
                 android:background="@drawable/drinks"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -92,7 +92,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
+                android:id="@+id/sauce_button"
                 android:background="@drawable/sauce"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/margins"
@@ -112,7 +112,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
+                android:id="@+id/cake_button"
                 android:background="@drawable/cake"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -122,7 +122,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
+                android:id="@+id/sweet_button"
                 android:background="@drawable/sweet"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/margins"
@@ -143,7 +143,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
+                android:id="@+id/porridge_button"
                 android:background="@drawable/porridge"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margins"
@@ -153,7 +153,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/other"
+                android:id="@+id/other_button"
                 android:background="@drawable/other"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/margins"
