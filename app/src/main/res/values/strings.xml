@@ -7,7 +7,6 @@
 
     <string name="name_dish">Название блюда</string>
     <string name="category">Категория</string>
-    <string name="cat">Категория:</string>
     <string-array name="category_list">
         <item>Бульоны и супы</item>
         <item>Горячие блюда</item>

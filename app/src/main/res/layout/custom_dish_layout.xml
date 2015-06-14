@@ -34,23 +34,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cat"
-        android:layout_marginLeft="@dimen/margins"
-        android:layout_gravity="left"
-        android:textColor="@color/font"
-        android:textStyle="bold|italic"
-        android:textSize="@dimen/textSize"
-        android:text="@string/cat"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cat_choose"
+        android:id="@+id/category_choose"
         android:layout_marginLeft="@dimen/margins"
         android:layout_gravity="left"
         android:textColor="@color/text"
         android:textStyle="bold|italic"
-        android:textSize="@dimen/textSize"/>
+        android:textSize="@dimen/margin_bot_land"/>
 
 </LinearLayout>
 
